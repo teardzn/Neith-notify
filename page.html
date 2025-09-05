@@ -114,7 +114,7 @@ async function loadStreams() {
     const data = await res.json();
 
     if (data.length === 0) {
-      container.innerHTML = '現在配信中のチャンネルはありません';
+      container.innerHTML = '<p class="mescolor">現在配信中のチャンネルはありません';
       return;
     }
 
@@ -147,6 +147,7 @@ setInterval(loadStreams, 30000);
 
 </body>
 </html>
+
 
 
 
